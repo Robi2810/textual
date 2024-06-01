@@ -1,8 +1,12 @@
+import rich
 from rich.console import Console, RenderableType
+from rich.segment import Segment, Segments
 
 class ErrorHandler():
 
-    def __init__(self):
+    def __init__(
+        self
+    ):
         self.error_console = Console(markup=False, highlight=False, stderr=True)
 
     def print_error(self, renderable: RenderableType):

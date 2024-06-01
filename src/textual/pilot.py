@@ -14,7 +14,7 @@ from typing import Any, Generic
 import rich.repr
 
 from ._wait import wait_for_idle
-from .app import App, ReturnType
+from .app_components.app import App, ReturnType
 from .drivers.headless_driver import HeadlessDriver
 from .events import Click, MouseDown, MouseEvent, MouseMove, MouseUp, Resize
 from .geometry import Offset, Size
